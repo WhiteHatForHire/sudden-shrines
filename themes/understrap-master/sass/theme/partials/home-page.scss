@@ -1,0 +1,35 @@
+
+
+
+// ===== PARALLAX =====
+.parallax-landing {
+    height: 100vh;
+    background: transparent;
+}
+
+.center-landing-text {
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding-bottom: 60px;
+    height: 100%;
+    width: 100%;
+    h2 {
+        // font-size: px;
+        font-weight: 600;
+    }
+}
+
+// Categories slider 
+.parallax-slider {
+    border-top: 10px solid black;
+    height: 100%;
+    padding: 50px 0;
+    // background-size: cover;
+    // background-image: url(/wp-content/uploads/2018/07/rockssmall.jpg);
+}
+
+.owl-carousel {
+    border: none !important;
+}

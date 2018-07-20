@@ -1,0 +1,22 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// 300, 300 italic, 400, 600, 700, 800
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,800");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#woocommerce-wrapper {
+    margin-top: 100px;
+}
+
+// ===== NAVIGATION ======
+.bg-nav {
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+.nav-link {
+    color: black;
+}
