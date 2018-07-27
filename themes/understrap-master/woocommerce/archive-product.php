@@ -29,9 +29,58 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+	<?php
+
+  $taxonomy     = 'product_cat';
+  $orderby      = 'name';  
+  $show_count   = 0;      // 1 for yes, 0 for no
+  $pad_counts   = 0;      // 1 for yes, 0 for no
+  $hierarchical = 1;      // 1 for yes, 0 for no  
+  $title        = '';  
+  $empty        = 0;
+
+  $args = array(
+         'taxonomy'     => $taxonomy,
+         'orderby'      => $orderby,
+         'show_count'   => $show_count,
+         'pad_counts'   => $pad_counts,
+         'hierarchical' => $hierarchical,
+         'title_li'     => $title,
+         'hide_empty'   => $empty
+  );
+ $all_categories = get_categories( $args );
+ foreach ($all_categories as $cat) {
+    if($cat->category_parent == 0) {
+        $category_id = $cat->term_id;   
+        // echo $cat->name;
+        // echo '<a href="/product-category/' . $cat->name . '></a>';
+        echo '<a class="btn category-buttons btn-outline-primary" href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
+
+        $args2 = array(
+                'taxonomy'     => $taxonomy,
+                'child_of'     => 0,
+                'parent'       => $category_id,
+                'orderby'      => $orderby,
+                'show_count'   => $show_count,
+                'pad_counts'   => $pad_counts,
+                'hierarchical' => $hierarchical,
+                'title_li'     => $title,
+                'hide_empty'   => $empty
+        );
+        // $sub_cats = get_categories( $args2 );
+        // if($sub_cats) {
+        //     foreach($sub_cats as $sub_category) {
+        //         echo  $sub_category->name ;
+        //     }   
+        // }
+    }       
+}
+?>
+	<a href="/" class="btn btn-outline-primary"></a>
+		
 	<?php endif; ?>
 
 	<?php

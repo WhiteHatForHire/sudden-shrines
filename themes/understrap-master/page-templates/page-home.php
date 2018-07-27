@@ -29,5 +29,6 @@ get_header();
 	</div>
 	<!-- End Categories Slider  -->
 </div>
-
-<?php get_footer(); ?>
+<div class="footer-bg">
+	<?php get_footer(); ?>
+</div>

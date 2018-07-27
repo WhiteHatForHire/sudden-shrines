@@ -42,9 +42,12 @@
       transition: all .5s;
     }
     .btn {
-        background-color: black !important;
+        background-color: white !important;
+        border: 1px solid black !important;
+        color: black !important;
         &:hover {
-            background-color: rgba(0,0,0,0.7) !important;
+            color: white !important;
+            background-color: black !important;
         }
     }
     background: rgba(255,255,255,0.9) !important;
@@ -60,7 +63,7 @@
 }
 
 #wrapper-footer {
-    background-color: rgba(0,0,0,0.3);    
+    background-color: transparent;    
 }
 
 .footer-links {
@@ -75,4 +78,25 @@
 
 .copyright {
     padding-bottom: 5px;
+}
+
+#woocommerce-wrapper {
+    #content {
+        padding: 20px;
+        background-color: rgba(255,255,255,0.9);
+    }
+    background-image: url('/wp-content/uploads/2018/07/seamless.jpg');
+}
+
+.footer-bg {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.woocommerce-product-gallery {
+    opacity: 1 !important;
+}
+
+.category-buttons {
+    margin-top: 10px;
+    margin-right: 10px;
 }
