@@ -79,8 +79,8 @@ do_action( 'woocommerce_before_main_content' );
     }       
 }
 ?>
-	<a href="/" class="btn btn-outline-primary"></a>
-		
+
+		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 	<?php endif; ?>
 
 	<?php

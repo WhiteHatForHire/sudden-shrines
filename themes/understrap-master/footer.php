@@ -20,10 +20,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row footer-main">
 			<div class="col-lg-6 offset-lg-3 text-center footer-links">
 				<div class="row">
-					<div class="col-md-3"><a href="/home">Home</a></div>
-					<div class="col-md-3"><a href="/home">Shop</a></div>
-					<div class="col-md-3"><a href="/home">Blog</a></div>
-					<div class="col-md-3"><a href="/home">Cart</a></div>
+					<div class="col-md-3"><a href="/">Home</a></div>
+					<div class="col-md-3"><a href="/shop">Shop</a></div>
+					<div class="col-md-3"><a href="/journal">Blog</a></div>
+					<div class="col-md-3"><a href="/contact">Contact</a></div> 
 				</div>
 
 			</div>

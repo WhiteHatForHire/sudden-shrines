@@ -82,14 +82,14 @@
 
 #woocommerce-wrapper {
     #content {
-        padding: 20px;
+        padding: 25px;
         background-color: rgba(255,255,255,0.9);
     }
     background-image: url('/wp-content/uploads/2018/07/seamless.jpg');
 }
 
 .footer-bg {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
 }
 
 .woocommerce-product-gallery {
@@ -97,6 +97,52 @@
 }
 
 .category-buttons {
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0;
+}
+
+.wrapper {
+    padding-top: 150px;
+}
+
+.entry-meta {
+    margin-bottom: 20px;
+}
+.updated {
+    display: none;
+}
+
+.entry-content {
+    margin-top: 20px;
+}
+.comment-respond {
+    margin-top: 20px;
+}
+.post-grid  {
+    .item {
+        img {
+            // min-height: 200px;
+            // width: auto !important;
+        }
+        .read_more {
+            transition: all .5s;
+            border-radius: 10px;
+            border: 1px black solid;
+            padding: 10px !important;
+            background-color: transparent;
+            color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+        background-color: rgba(0,0,0,0.1) !important;
+        padding-bottom: 20px !important;
+    }
+    margin-top: 80px;
+}
+
+.post-133 {
+    .entry-title {
+        text-align: center;
+    }
 }

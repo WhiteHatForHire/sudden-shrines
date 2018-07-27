@@ -28,7 +28,17 @@ get_header();
 		</div>
 	</div>
 	<!-- End Categories Slider  -->
+
+	<div class="pinterest-feed">
+		<div class="container">
+			<?php echo do_shortcode(""); ?>
+		</div>
+	</div>
+
 </div>
+
+
+
 <div class="footer-bg">
 	<?php get_footer(); ?>
 </div>
