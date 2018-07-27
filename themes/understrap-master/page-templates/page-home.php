@@ -24,7 +24,7 @@ get_header();
 	<!-- Categories Slider -->
 	<div class="parallax-slider" data-speed="0.1" data-parallax="scroll" data-image-src="/wp-content/uploads/2018/07/rocks2small.jpg">
 		<div class="container">
-			<?php echo do_shortcode("[woo_category_slider id='49']"); ?>
+			<?php echo do_shortcode("[wpb-woo-category-slider content_type='with_image' items='4' need_description='on' exclude='15']"); ?>
 		</div>
 	</div>
 	<!-- End Categories Slider  -->

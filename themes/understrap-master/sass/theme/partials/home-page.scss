@@ -33,3 +33,28 @@
 .owl-carousel {
     border: none !important;
 }
+
+
+.wpb-woo-cat-item {
+    padding-top: 15px !important;
+      overflow: hidden;
+    img {
+      transition: all 1s;
+    }
+    .btn {
+        background-color: black !important;
+        &:hover {
+            background-color: rgba(0,0,0,0.7) !important;
+        }
+    }
+    background: rgba(255,255,255,0.9) !important;
+}
+
+.wpb-woo-cat-item:hover {
+    img {
+        overflow: hidden;
+        transition: all 1s;
+        transform: scale(1.13);
+
+    }
+}
