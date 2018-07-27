@@ -13,37 +13,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
+		
+		<div class="row footer-main">
+			<div class="col-lg-6 offset-lg-3 text-center footer-links">
+				<div class="row">
+					<div class="col-md-3"><a href="/home">Home</a></div>
+					<div class="col-md-3"><a href="/home">Shop</a></div>
+					<div class="col-md-3"><a href="/home">Blog</a></div>
+					<div class="col-md-3"><a href="/home">Cart</a></div>
+				</div>
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
+			</div>
+		</div>
+		<div class="text-center copyright">
+			&copy; Copyright <?php echo date('Y'); ?> SuddenShrines
+		</div>
 
 	</div><!-- container end -->
 

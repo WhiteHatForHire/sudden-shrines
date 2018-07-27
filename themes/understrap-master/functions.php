@@ -69,3 +69,11 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+// Add Favicon
+function favicon() {
+echo '<link rel="Shortcut Icon" type="image/x-icon" href="/wp-content/themes/understrap-master/img/shrines-favicon.ico" />';
+}
+add_action('wp_head', 'favicon');
+add_action('login_head', 'favicon');
+add_action('admin_head', 'favicon');

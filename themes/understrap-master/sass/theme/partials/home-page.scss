@@ -25,7 +25,7 @@
 .parallax-slider {
     border-top: 10px solid black;
     height: 100%;
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
     // background-size: cover;
     // background-image: url(/wp-content/uploads/2018/07/rockssmall.jpg);
 }
@@ -39,7 +39,7 @@
     padding-top: 15px !important;
       overflow: hidden;
     img {
-      transition: all 1s;
+      transition: all .5s;
     }
     .btn {
         background-color: black !important;
@@ -53,8 +53,26 @@
 .wpb-woo-cat-item:hover {
     img {
         overflow: hidden;
-        transition: all 1s;
-        transform: scale(1.13);
+        transition: all .5s;
+        transform: scale(1.05);
 
     }
+}
+
+#wrapper-footer {
+    background-color: rgba(0,0,0,0.3);    
+}
+
+.footer-links {
+    a {
+        padding: 20px;
+    }
+}
+
+.footer-main {
+    padding: 30px 0;
+}
+
+.copyright {
+    padding-bottom: 5px;
 }
